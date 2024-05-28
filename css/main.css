@@ -1,0 +1,235 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    background-color: #fff;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer-country {
+    padding: 15px 30px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #202124;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 14px;
+}
+
+/* HEADER STYLES */
+header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+header nav .nav-right-section {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .nav-right-section li {
+    margin-left: 16px;
+}
+
+header nav .nav-right-section li:hover {
+    text-decoration: underline;
+}
+
+header nav .nav-right-section a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+}
+
+header nav .nav-right-section .menu {
+    /*background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);*/
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+header nav .nav-right-section .menu:hover{
+    background-color: rgba(60, 64, 67, .08);
+    border-radius: 50%;
+}
+
+header nav .nav-right-section img {
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+
+}
+
+header nav .nav-right-section img:hover{
+    background-color: rgba(60, 64, 67, .08);
+}
+
+/* MAIN STYLES */
+main .main-logo img {
+    width: 272px;
+    height: 92px;
+}
+
+main .main-input {
+    width: 100%;
+    max-width: 584px;
+    margin: 24px 0;
+    padding: 0 8px;
+}
+
+main .main-input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    padding: 0 14px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-color: #dfe1e5;
+}
+
+main .main-input .search-icon {
+    /*background-image: url(https://seekicon.com/free-icon-download/search_20.svg);*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+}
+
+main .main-input input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    height: 34px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+main .main-input .micro-icon {
+    /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);*/
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon {
+    /*background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);*/
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 3%;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+main .main-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+/*
+main .main-buttons div {
+    margin: 0 4px;
+}*/
+
+main .main-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+main .main-buttons button:hover {
+    background-color: #f8f8f8;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
